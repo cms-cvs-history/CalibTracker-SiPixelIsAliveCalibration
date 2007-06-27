@@ -1,0 +1,6 @@
+module SiPixelIsAliveCalibration = SiPixelIsAliveCalibration {
+   untracked string src = "siPixelDigi"
+   untracked string inputFileName = "/afs/cern.ch/user/a/aryd/Pixel/forward/ryd/calib_070416a.dat"
+   untracked bool useCalibFile = false
+
+}
