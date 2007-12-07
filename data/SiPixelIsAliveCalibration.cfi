@@ -1,4 +1,16 @@
-module SiPixelIsAliveCalibration = SiPixelIsAliveCalibration {
-   untracked string src = "siPixelDigi"
-   untracked bool useCalibDb = false
+###
+#  SiPixelIsAliveCalibration.cfi
+#  CMSSW configuration init file for pixel alive calibrations in CMSSW>=180
+#  Original Author:  Freya Blekman
+#          Created:  December 6 2007  
+#  $Id: SiPixelIsAliveCalibration.cfi, fblekman Exp $
+#
+#
+
+module siPixelIsAliveCalibration = SiPixelIsAliveCalibration {
+    InputTag DetSetVectorSiPixelCalibDigiTag = siPixelCalibDigiProducer
+    string outputFileName = "pixelalive.root"
+
+    # efficiency when pixel is defined as 'good':
+    untracked double minEfficiencyForAliveDef = 0.8
 }
