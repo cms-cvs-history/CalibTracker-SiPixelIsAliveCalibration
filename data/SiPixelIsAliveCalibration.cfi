@@ -3,13 +3,13 @@
 #  CMSSW configuration init file for pixel alive calibrations in CMSSW>=180
 #  Original Author:  Freya Blekman
 #          Created:  December 6 2007  
-#  $Id: SiPixelIsAliveCalibration.cfi, fblekman Exp $
+#  $Id: SiPixelIsAliveCalibration.cfi,v 1.5 2007/12/07 15:23:49 fblekman Exp $
 #
 #
 
 module siPixelIsAliveCalibration = SiPixelIsAliveCalibration {
-    InputTag DetSetVectorSiPixelCalibDigiTag = siPixelCalibDigiProducer
-    string outputFileName = "pixelalive.root"
+    InputTag DetSetVectorSiPixelCalibDigiTag = siPixelCalibDigis
+    string outputFileName = ""
 
     # efficiency when pixel is defined as 'good':
     untracked double minEfficiencyForAliveDef = 0.8
